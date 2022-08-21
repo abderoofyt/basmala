@@ -34,7 +34,7 @@ SECRET_KEY = 'django-insecure-bqzwq&^um2accl052hxn%i4ny%+6fp9l+m*wy2f4meul-axm=&
 DEBUG = False
 
 # ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['127.0.0.1', 'basmalademo.herokuapp.com/']
+ALLOWED_HOSTS = ['127.0.0.1', 'basmala-demo.herokuapp.com/']
 
 
 # Application definition
