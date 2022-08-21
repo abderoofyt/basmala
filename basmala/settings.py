@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-bqzwq&^um2accl052hxn%i4ny%+6fp9l+m*wy2f4meul-axm=&
 # 'django-insecure-bqzwq&^um2accl052hxn%i4ny%+6fp9l+m*wy2f4meul-axm=&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # ALLOWED_HOSTS = ['*']
 ALLOWED_HOSTS = ['127.0.0.1', 'basmalademo.herokuapp.com/']
@@ -136,9 +136,8 @@ USE_TZ = True
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = 'templates/static/'
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'templates/static'),
-)
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "templates/static"),)
+
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 

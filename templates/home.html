@@ -3,14 +3,23 @@
 <head>
 <title>Page Title</title>
 </head>
+<style>
+    img {
+      width: 25%;
+    }
+    </style>
 <body>
 
 <h1>This is a Heading</h1>
 <p>This is a paragraph.</p>
+{% load static %}
+<img src="{% static 'mum.jpg' %}" alt="My image"></br>
 
 <a href='/strings'>strings</a>
 <a href='/enter'>input</a>
 <a href='/post'>post</a>
+
+
 
 <p>crud</p>
 <a href='/crud/list/'>crud</a>
