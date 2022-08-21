@@ -25,10 +25,10 @@ urlpatterns = [
     # path('print/', include('polls.urls')),
     path('print/', include('strings.urls')),
     path('enter/', include('inputs.urls')),
-
     path('maths/', include('maths.urls')),
-
     path('crud/', include('cruds.urls')),
-
     path('social/', include('social.urls')),   
+
+    path('',  include('home.urls')),
+
 ]
