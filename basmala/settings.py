@@ -24,15 +24,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # with open('/secret_key.txt') as f:
 #     SECRET_KEY = f.read().strip()
     
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-bqzwq&^um2accl052hxn%i4ny%+6fp9l+m*wy2f4meul-axm=&')
+SECRET_KEY = 'django-insecure-bqzwq&^um2accl052hxn%i4ny%+6fp9l+m*wy2f4meul-axm=&'
 
 # 'django-insecure-bqzwq&^um2accl052hxn%i4ny%+6fp9l+m*wy2f4meul-axm=&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
-# ALLOWED_HOSTS = ['127.0.0.1', 'sample@domain.com']
+# ALLOWED_HOSTS = ['127.0.0.1', 'basmalademo.herokuapp.com/']
 
 
 # Application definition
@@ -52,7 +52,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
 
-    'django.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
