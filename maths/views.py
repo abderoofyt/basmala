@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from traitlets import Int
 from .forms import MathsForm, MathForm
 
 # Create your views here.
