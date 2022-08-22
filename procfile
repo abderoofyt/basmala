@@ -1,1 +1,1 @@
-web: gunicorn basmala.wsgi --log-file -
+web: gunicorn basmala.wsgi
