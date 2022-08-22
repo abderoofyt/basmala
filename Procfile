@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath basamala basmala.wsgi
+web: gunicorn basmala.wsgi
