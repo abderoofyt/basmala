@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>< title> Page Title </ title></title>
 </head>
 <style>
     img {
@@ -10,22 +10,46 @@
     </style>
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<h1>This is a Heading < h1> </h1>
+<p>This is a paragraph. < p> </p>
+<a href="#">link < a href="#where/link/goes">how link appears< /a></a><br>
 
 {% load static %}
-<img src="{% static 'mum.jpg' %}" alt="My image"></br>
+<img src="{% static 'mum.jpg' %}" alt="My image"><br>
 
 <h2>Strings</h2>
-<a href="{% url 'strings' %}">strings</a>
-<a href="{% url 'hello' %}">print Hello</a>
-<a href="{% url 'bismala' %}">print Basamala</a>
-<a href="{% url 'context' %}">print Context</a>
-<a href="{% url 'home' %}">print Home</a>
+<p>"A <a href="{% url 'strings' %}">"string"</a> in Python is a sequence of characters."</p>
+<a href="{% url 'hello' %}">print("Hello, World!")</a>
+
+<h2>Numb3rs</h2>
+<p>"Python understands <a href="{% url 'strings' %}">numb3rs</a> and standard ari+hme+ic."</p>
+<a href="{% url 'hello' %}">print(Numb3rs)</a>
+
+<h2>Variable</h2>
+<p>"A variable is a name for a valu3/'string'. Once a variable is assigned(=) a valu3/'string', the variable can be used in place of that valu3/'string'."</p>
+<p> The characters must all be letters, digits, or underscores _, and must start with a letter. In particular, punctuation
+  and blanks are not allowed.</p>
+<a href="{% url 'bismala_list' %}">print(bismala_list)</a>
+
+<h2>Literals and Identifiers</h2>
+<p>"The plus(+) operation with "strings" means to concatenate(+) the 'strings' into one."</p>
+<p>
+  False await else import pass
+  None break except in raise
+  True class finally is return
+  and continue <br> for lambda try
+  as def from nonlocal while
+  assert del global not with
+  async elif if or yield
+</p>
+
+<h2>String Concatenation</h2>
+<p>"The plus(+) operation with "strings" means to concatenate(+) the 'strings' into one."</p>
+<a href="{% url 'bismala_variable' %}">print("Bismillah " + Context)</a>
 
 <h2>Inputs</h2>
-<a href='/enter'>input</a>
-<a href='/enter/post'>post</a>
+<a href='/enter'>input()</a>
+<a href='/enter/post'>print(input())</a>
 
 <h2>crud</h2>
 <a href='/crud/list/'>crud</a>
