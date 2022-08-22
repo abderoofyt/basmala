@@ -5,28 +5,36 @@
 </head>
 <style>
     img {
-      width: 25%;
+      width: 10%;
     }
     </style>
 <body>
 
 <h1>This is a Heading</h1>
 <p>This is a paragraph.</p>
+
 {% load static %}
 <img src="{% static 'mum.jpg' %}" alt="My image"></br>
 
-<a href='/strings'>strings</a>
+<h2>Strings</h2>
+<a href="{% url 'strings' %}">strings</a>
+<a href="{% url 'hello' %}">print Hello</a>
+<a href="{% url 'bismala' %}">print Basamala</a>
+<a href="{% url 'context' %}">print Context</a>
+<a href="{% url 'home' %}">print Home</a>
+
+<h2>Inputs</h2>
 <a href='/enter'>input</a>
-<a href='/post'>post</a>
+<a href='/enter/post'>post</a>
 
-
-
-<p>crud</p>
+<h2>crud</h2>
 <a href='/crud/list/'>crud</a>
-<p>social</p>
-<a href='/social/register/'>social</a>
-<p>maths</p>
+<h2>social</h2>
+  <a href='/social/register/'>Register</a>
+  <a href='/social/login/'>login</a>
+<h2>maths</h2>
 <a href='/maths'>maths</a>
+</br>
 
 </body>
 </html>

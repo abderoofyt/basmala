@@ -4,7 +4,6 @@
         <title>Login</title>
     </head>
     <body>
-        {% load bootstrap3 %}
     <h1 id="login">Login</h1>
         {% if form.errors %}
         <p>Your username and passowrd didn't match.
@@ -15,7 +14,7 @@
     <form method="POST" class="post-form">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Save</button>
+        <button type="submit" class="save btn btn-default">Login</button>
     </form>
     </body>
 </html>
